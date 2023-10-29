@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>API</title>
+		<style>
+		body{
+			background-size:100%;
+			background-image: url("https://t3.ftcdn.net/jpg/05/51/95/26/360_F_551952602_vp8d4v2nDYo8UExEpxFOtMMv8uOzPaq9.jpg");
+			position:sticky;
+			top:0;
+			z-index:999;
+			display:flex;
+			justify-content:center;
+			align-items;center;
+			height:100vh;
+		}
+		.weather{
+			
+			background-color:white;
+			padding:10px;
+			border-radius:10px;
+			width:270px;
+			height:400px;
+			align-items:center;
+		}
+			button {
+			  margin-top:15px;
+			  align-items: center;
+			  appearance: none;
+			  background-color: #EEF2FF;
+			  border-radius: 8px;
+			  border-width: 2px;
+			  border-color: #536DFE;
+			  box-shadow: rgba(83, 109, 254, 0.2) 0 2px 4px, rgba(83, 109, 254, 0.15) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+			  box-sizing: border-box;
+			  color: #536DFE;
+			  cursor: pointer;
+			  display: inline-flex;
+			  font-family: "JetBrains Mono", monospace;
+			  height: 56px;
+			  justify-content: center;
+			  line-height: 1;
+			  list-style: none;
+			  overflow: hidden;
+			  padding-left: 24px;
+			  padding-right: 24px;
+			  position: relative;
+			  text-align: center;
+			  text-decoration: none;
+			  transition: box-shadow 0.15s, transform 0.15s;
+			  user-select: none;
+			  -webkit-user-select: none;
+			  touch-action: manipulation;
+			  white-space: nowrap;
+			  will-change: box-shadow, transform;
+			  font-size: 20px;
+			}
+
+			button:focus {
+			  outline: none;
+			  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(83, 109, 254, 0.4) 0 2px 4px, rgba(83, 109, 254, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+			}
+
+			button:hover {
+			  box-shadow: rgba(83, 109, 254, 0.3) 0 4px 8px, rgba(83, 109, 254, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+			  transform: translateY(-2px);
+			}
+
+			button:active {
+			  box-shadow: #D6D6E7 0 3px 7px inset;
+			  transform: translateY(2px);
+			}
+			input {
+			margin-top:35px;
+				 background-color: #383838;
+				 border: 1ex solid none;
+				 border-top-width: 1.7em;
+				 margin: 0;
+				 padding: 0;
+				 color: #383838;
+				 word-wrap: break-word;
+				 outline: 7px solid #383838;
+				 height: 30px;
+				 font-size: 17px;
+				 text-align: center;
+				 transition: all 1s;
+				 max-width: 190px;
+				 font-weight: bold;
+				 font-family: 'Courier New', Courier, monospace;
+				}
+
+				input:hover {
+				 border-top-width: 0.2em;
+				 background-color: #f1e8e8;
+				}
+
+				input:focus {
+				 border-top-width: 0.2em;
+				 background-color: #f1e8e8;
+				}
+				p{
+					padding:15px;
+					margin-top:15px;
+					box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+				}
+		</style>
+	</head>
+	<body>
+		<div class="weather">
+			<input type="text">
+			<button>Search</button>
+				<DIV CLASS="info">
+					<p class="temp">Temp</p>
+					<p class="desc">desc</p>
+					<p class="wind">wind</p>
+					<p class="humidity">humidity</p>
+					<img src="" class="clouds">
+				</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
